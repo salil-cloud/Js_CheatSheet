@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Listeners</title>
+    <style>
+      body {
+        background: rgb(16, 159, 27);
+        background: linear-gradient(
+          90deg,
+          rgba(16, 159, 27, 1) 0%,
+          rgba(12, 155, 126, 1) 31%,
+          rgba(0, 212, 255, 1) 100%
+        );
+        font-family: "Courier New", Courier, monospace;
+        color: aliceblue;
+      }
+      .main-heading {
+        text-align: center;
+      }
+      .container {
+        margin: auto;
+        display: flex;
+        height: 500px;
+        width: 800px;
+      }
+
+      .reveal-btn {
+        background-color: inherit;
+        width: 100%;
+        color: aliceblue;
+        border: solid white 2px;
+        padding: 20px;
+        border-radius: 15px;
+        margin: 10px;
+        font-size: x-large;
+        font-weight: bolder;
+      }
+      .hidden-content {
+        padding: 20px;
+        color: aliceblue;
+        border: solid white 2px;
+        border-radius: 15px;
+        margin: 10px;
+      }
+
+      .hidden-content {
+        display: none;
+      }
+
+      .hidden-content.reveal-btn {
+        display: flex;
+        font-size: small;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="main-heading">Event-Listeners</h1>
+    <div class="container">
+      <button class="reveal-btn boxes">Reveal more</button>
+      <div class="hidden-content boxes">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum consectetur
+        rem quasi fuga fugiat excepturi optio commodi. Id doloribus magni
+        commodi, perferendis eligendi, accusantium ratione officiis impedit,
+        voluptatum voluptates iure!
+      </div>
+    </div>
+    <script src="app1.js"></script>
+  </body>
+</html>
